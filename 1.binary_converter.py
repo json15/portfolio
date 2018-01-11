@@ -56,7 +56,7 @@ def decimal_to_binary(decimal_input):
     return result
 
 
-def is_int_value(decimal_input):
+def is_decimal_value(decimal_input):
     try:
         decimal_input = int(decimal_input)
         if decimal_input != 0 or decimal_input != -0:
@@ -116,7 +116,7 @@ def main():
         elif input_d(user_input):
             while True:
                 decimal_input = input('Input decimal number: ')
-                if is_int_value(decimal_input):
+                if is_decimal_value(decimal_input):
                     print(decimal_to_binary(decimal_input))
                     break
                 elif decimal_input == '0':
